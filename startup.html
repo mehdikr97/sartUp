@@ -4,26 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExtraOne</title>
-<link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-  
-<header  id="leo">
-    <h1 >ExtraOne</h1>
+<header id="leo">
+    <h1 class="logo">ExtraOne</h1>
     <nav id="menu">
-<h4>Home</h4>
-<h4> About</h4>
-<h4>Service</h4>
-<h4> Contact</h4>    
-</nav>
+        <h4>Home</h4>
+        <h4>About</h4>
+        <h4>Service</h4>
+        <h4>Contact</h4>    
+    </nav>
 </header>
 
-  
+<!-- Première section -->
+<section>
+  <video class="background-video" autoplay muted loop>
+    <source src="back.mp4" type="video/mp4">
+  </video>
+  <div class="stripe"></div>
+  <div class="coke">
+    <img src="goku-removebg-preview.png" class="coke-can image">
+  </div>
+  <div class="text">
+    <h1> 
+        <span class="headr">
+            <span style="color: orangered;">Wel</span>
+            <span style="color: blue;">come</span>
+        </span>
+    </h1>
+    <h2>ExtraOne</h2>
+    <p>
+        <span class="para" style="color:wheat;">all right reserved coco coco dkksl shdhskks</span>
+    </p>
+  </div>
+
+  <div class="image"><img src="dr1-removebg-preview.png" alt="" height="100px" style="margin-left: 30%;"></div>
+  <div class="image"><img src="2-removebg-preview.png" alt="" height="110px" style="margin-left: 45%; position: absolute; top: 100px;"></div>
+  <div class="image"><img src="dr3-removebg-preview.png" alt="" height="130px" style="margin-left: 60%; position: absolute; top: 100px;"></div>
+  <div class="image"><img src="dr4-removebg-preview.png" alt="" height="150px" style="margin-left: 70%; position: absolute; top: 250px;"></div>
+  <div class="image"><img src="dr5-removebg-preview.png" alt="" height="85px" style="margin-left: 70%; position: absolute; top: 550px;"></div>
+  <div class="image"><img src="dr6-removebg-preview.png" alt="" height="80px" style="margin-left: 50%; position: absolute; top: 700px;"></div>
+  <div class="image"><img src="dr7-removebg-preview.png" alt="" height="100px" style="margin-left: 30%; position: absolute; top: 550px;"></div>
+</section>
+
+<!-- Section avec les cartes -->
+<section class="features my-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Nos Points Forts</h2>
+        <div class="row">
+            <!-- Carte 1 : Innovation -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="https://via.placeholder.com/300x150.png?text=Innovation" class="card-img-top" alt="Innovation">
+                    <div class="card-body">
+                        <h5 class="card-title">Innovation</h5>
+                        <p class="card-text">Nous croyons que chaque idée a le potentiel de changer le monde.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 : Collaboration -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="https://via.placeholder.com/300x150.png?text=Collaboration" class="card-img-top" alt="Collaboration">
+                    <div class="card-body">
+                        <h5 class="card-title">Collaboration</h5>
+                        <p class="card-text">Travaillons ensemble pour atteindre des objectifs communs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 : Excellence -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="https://via.placeholder.com/300x150.png?text=Excellence" class="card-img-top" alt="Excellence">
+                    <div class="card-body">
+                        <h5 class="card-title">Excellence</h5>
+                        <p class="card-text">Nous nous engageons à offrir des services de la plus haute qualité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
 <script src="script.js"></script>
 
 </body>

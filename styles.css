@@ -1,7 +1,4 @@
-*{
-    background-color: black;
-    color: aliceblue;
-}
+
 #leo{
     display: flex;
     justify-content: space-between;
@@ -9,13 +6,95 @@
     padding: 30px 80px; 
 }
 #menu{
+    color: #090909;
     display: flex;
     gap: 70px;
 }
-h4{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h4{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
 }
 
-#string{
-    width: 800px;
+.stripe{
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    bottom: 43%;
+    background: linear-gradient(to right , #ee4540 , #c0342f);
 }
+.coke{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 1;
+}
+.coke img{
+    transform: translate(-50%,-50%);
+    max-height: 700px;
+}
+.text{
+    position: absolute;
+    top: 200px;
+    left: 500px;}
+    .text h1{
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #555555;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        height: 150px;
+        width: 900px;
+    }
+.text h1 .headr{
+    position: absolute;
+    bottom: 25px;
+    top: 80px;
+    left: 300px;
+}
+.text h2{
+    position: absolute;
+    font-family: 'Josefin Sans',sans-serif;
+    top: 125px;
+    left: 40%;
+    color: #f4f2ec;
+    font-size: 100px;
+}
+.text p{
+    width: 400px;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 350px;
+    position: relative;
+    height: 110px;
+    color: #555555;
+    font-weight: 600;
+}
+.coke-can{
+    animation: float 4s ease-in-out infinite;
+
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.background-video {
+    position: fixed; /* Fixed position to cover entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: -1; /* Sends the video behind other content */
+}
+
