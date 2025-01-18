@@ -53,3 +53,71 @@ TweenMax.from(".text .para", 1.2, {
     y: 40,
     ease: Circ.easeInOut
 })
+const images = document.querySelectorAll('.image img');
+
+// GSAP Animation
+function animateImages() {
+    gsap.fromTo(images, 
+        { opacity: 0 }, 
+        { 
+            opacity: 1, 
+            duration: 1, 
+            stagger: 0.5, 
+            onComplete: () => {
+                gsap.to(images, {
+                    opacity: 0,
+                    duration: 0.5,
+                    stagger: 0.5,
+                    onComplete: animateImages // Loop the animation
+                });
+            }
+        });
+}
+animateImages();
+ 
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".content .h1 h1", {
+      scrollTrigger: {
+        trigger: ".content",
+        start: "top 80%", 
+        end: "top 50%", 
+        scrub: 1, 
+      },
+      y: 100,
+      opacity: 0, 
+      duration: 1.2, 
+      ease: "power3.out", 
+      stagger: 0.2, 
+    });
+
+    // Animation pour le paragraphe
+    gsap.from(".content p", {
+      scrollTrigger: {
+        trigger: ".content",
+        start: "top 70%",
+        end: "top 40%",
+        scrub: 1,
+      },
+      x: -100, 
+      opacity: 0,
+      duration: 1.5,
+      ease: "power3.out",
+    });
+
+    // Animation pour le bouton et les liens sociaux
+    gsap.from(".content a, .content .social ul li", {
+      scrollTrigger: {
+        trigger: ".content",
+        start: "top 60%",
+        end: "top 30%",
+        scrub: 1,
+      },
+      scale: 0.8, 
+      opacity: 0,
+      duration: 1.2,
+      ease: "elastic.out(1, 0.3)", 
+      stagger: 0.3, 
+    });
+  });
