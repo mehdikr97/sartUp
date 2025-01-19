@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaporama de Cartes avec GSAP et Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header  id="leo">
+        <h1 class="logo" >ExtraOne</h1>
+        <nav id="menu">
+    <h4> <a href="home.html">Home</a></h4>
+    <h4> <a href="about.html">About</a></h4>
+    <h4><a href="service.html">Service</a></h4>
+    <h4 ><a href="contact.html"> Contact</a></h4>    
+    </nav>
+    </header>
+    <header>
+      <section class="home" id="home">
+        <div class="home-content">
+            <h1 class="text-primary">ExtraOne </h1>
+            <h3 class="text-primary">services <br> <span class="dd"></span></h3>
+           <button  class="btn btn-primary">services</button>
+        </div>
+    
+            <div class="cards">
+                <img class="image" src="img/vr-1.webp" alt="Photo" >
+        </div>
+    </section>
+    </header>
+    <section>
+       
+        <div class="container">
+            <div class="row align-items-center gx-3 gy-5 py-5 mt-5">
+              <div class="col-12 col-md-12 col-lg-5">
+                <img
+                  src="img/img-1.webp"
+                  class="img-fluid mx-auto d-block"
+                  alt="a man using vr gadget"
+                />
+              </div>
+              <div class="col-12 col-md-12 text-center text-lg-start col-lg-7">
+                <h2 class="fw-bold text-primary fs-1 pb-3">about</h2>
+                <p class="about-text"id="fa">
+                    À la pointe de l'innovation technologique, nous sélectionnons une collection des derniers gadgets et accessoires pour enrichir votre style de vie numérique. Nous croyons au pouvoir de la technologie pour améliorer les expériences quotidiennes, et notre mission est de proposer des produits de pointe aux passionnés de technologie du monde entier.
+                </p>
+                <p class="about-text" id="fa">
+                    Avec un accent sur la qualité, la fonctionnalité et le style, TechGear Hub s'approvisionne auprès des principaux fabricants et des innovateurs technologiques émergents. Notre équipe d'experts sélectionne soigneusement chaque article afin de garantir qu'il respecte nos normes élevées et répond aux besoins en constante évolution de notre communauté diversifiée de clients.
+                </p>
+                <button
+                  class="btn btn-primary px-5 py-3 mt-3 fs-5 fw-medium"
+                  type="button"
+                >
+                  info
+                </button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="highlights" class="py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="mb-4">Nos Points Forts</h2>
+          <div class="row">
+            <div class="col-md-3" data-aos="fade-up">
+              <div class="card p-3">
+                <h5>Innovation</h5>
+                <p>Nous repoussons les limites de la technologie.</p>
+              </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="card p-3">
+                <h5>Collaboration</h5>
+                <p>Un travail d’équipe au cœur de nos projets.</p>
+              </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="card p-3">
+                <h5>Excellence</h5>
+                <p>Un engagement pour des résultats exceptionnels.</p>
+              </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="card p-3">
+                <h5>Flexibilité</h5>
+                <p>Des solutions adaptées à vos besoins.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    <h1 id="A3">À propos de nous</h1>
+
+    <section id="cardSlider">
+    <div id="section1" class="section bg-light">
+        <div class="container">
+          <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/avatar-1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ayoub fatihi </h5>
+                        <p class="card-text">develepeur web et Testeur</p>
+                        <a href="https://github.com/" class="btn btn-primary "> info </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/avatar-2.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Mehdi karkori</h5>
+                        <p class="card-text">softwer engenier and chef de project </p>
+                        <a href="https://github.com/mehdikr97" class="btn btn-primary "> info </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/avatar-5.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">sanae</h5>
+                        <p class="card-text">design ui/ux </p>
+                        <a href="https://github.com/mehdikr97" class="btn btn-primary "> info </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/avatar-3.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ibtissam</h5>
+                        <p class="card-text">RH.</p>
+                        <a href="https://github.com/mehdikr97" class="btn btn-primary "> info </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<footer>
+</footer>
+<footer>
+<h1> les hestory </h1>
+
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="about.js"></script>
+</body>
+</html>
