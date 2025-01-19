@@ -12,9 +12,15 @@
     display: flex;
     gap: 70px;
 }
-h4{
+a {
+    text-decoration: none;
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
+}
+h4 a:hover{
+    text-decoration: none;
+    font-size: 30px;
+    color: #090909;
 }
 
 .stripe{
@@ -345,4 +351,44 @@ input:checked + label .description {
   }
     
 
-  
+  #footer {
+    background: #090909;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#footer .footer-container p {
+    margin: 0;
+    font-size: 16px;
+    flex: 1;
+}
+
+#footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+#footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footer .social-icons a:hover {
+    color: #00d9ff;
+}
